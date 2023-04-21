@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url("./desktop-bg.png");
+  background-image: url("./public/desktop-bg.png");
 }
 .logo {
   margin-top: 2rem;
@@ -73,7 +73,7 @@ main > h3 {
 
 @media only screen and (max-width: 768px) {
   .App {
-    background-image: url("./tablet-bg.png");
+    background-image: url("./public/tablet-bg.png");
   }
   .logo {
     margin-top: 6rem;
@@ -82,7 +82,7 @@ main > h3 {
 }
 @media only screen and (max-width: 450px) {
   .App {
-    background-image: url("./mobile-bg.png");
+    background-image: url("./public/mobile-bg.png");
     padding: 0.4rem;
   }
   .logo {
