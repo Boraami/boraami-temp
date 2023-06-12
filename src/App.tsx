@@ -2,7 +2,6 @@ import boraamiLogo from "./assets/boraami-primary-horizontal-logo.svg";
 import "./App.css";
 import { FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 import TiktokIcon from "./assets/TiktokIcon";
-import ReactGA from "react-ga4";
 
 interface LinkProps {
   link: string;
@@ -11,22 +10,14 @@ interface LinkProps {
 }
 
 const SocialLink = ({ link, icon, linkType }: LinkProps) => {
-  const handleSocialLinkClick = () => {
-    ReactGA.event({
-      category: linkType,
-      action: "click",
-    });
-  };
   return (
-    <a onClick={handleSocialLinkClick} target="_blank" className="social-icon" href={link}>
+    <a target="_blank" className="social-icon" href={link}>
       {icon}
     </a>
   );
 };
 
 const App = () => {
-  ReactGA.initialize(import.meta.env.VITE_GA_ID);
-  ReactGA.send({ hitType: "pageview", page: "/" });
   return (
     <div className="App">
       <header>
