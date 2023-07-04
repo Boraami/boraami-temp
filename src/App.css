@@ -164,6 +164,9 @@ main > h3 {
   .faqs {
     margin-top: 2rem;
   }
+  .faq-head {
+    justify-content: center;
+  }
 }
 @media only screen and (max-width: 450px) {
   .hero {
