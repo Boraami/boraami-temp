@@ -51,6 +51,6 @@ news and information?`,
   },
   {
     question: `When will the Boraami app be available?`,
-    answer: `Our team is working very hard and we’re hoping to make it available by the mid-end of 2024. Your support means the world to us, so thank you for being here ARMY. Borahae 💜`,
+    answer: `Our team is working very hard and we’re hoping to make it available by the mid of 2024. Your support means the world to us, so thank you for being here ARMY. Borahae 💜`,
   },
 ];
