@@ -1,6 +1,6 @@
 import boraamiLogo from "./assets/boraami-primary-horizontal-logo.svg";
 import "./App.css";
-import { FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
+import { FaInstagramSquare, FaTwitterSquare, FaSpotify } from "react-icons/fa";
 import TiktokIcon from "./assets/TiktokIcon";
 import FAQList from "./components/FAQList";
 
@@ -38,6 +38,7 @@ const App = () => {
               <SocialLink link="https://twitter.com/boraami_app" icon={<FaTwitterSquare />} />
               <SocialLink link="https://www.instagram.com/boraami_app/" icon={<FaInstagramSquare />} />
               <SocialLink link="https://www.tiktok.com/@boraami_app" icon={<TiktokIcon />} />
+              <SocialLink link="https://open.spotify.com/user/31tzruz5rzkaafyuyvnmzzyodvoe?si=04f4121edefb4f7c" icon={<FaSpotify />} />
             </div>
           </div>
         </main>
