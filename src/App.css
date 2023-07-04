@@ -110,7 +110,6 @@ main > h3 {
 
 .faq-item {
   padding: 1rem 0.5rem;
-  height: max-content;
 }
 
 .faq-ques {
@@ -134,7 +133,7 @@ main > h3 {
   transition: max-height 0.2s ease-out;
 }
 .faq-open {
-  max-height: 500px;
+  max-height: 15rem;
   visibility: show;
   transition: max-height 0.2s ease-in;
 }
@@ -142,6 +141,9 @@ main > h3 {
 @media only screen and (min-height: 900px) {
   .logo {
     margin-top: 15vh;
+  }
+  .faqs {
+    margin-top: -5rem;
   }
 }
 
@@ -158,6 +160,7 @@ main > h3 {
   .hero {
     background-image: url("/public/mobile-bg.png");
     padding: 0.4rem;
+    min-height: 80vh;
   }
   .logo {
     margin-top: 15vh;
@@ -170,6 +173,18 @@ main > h3 {
     font-size: 1rem;
   }
   .socials > h4 {
+    font-size: 1rem;
+  }
+  .faqs {
+    padding-bottom: 6rem;
+  }
+  .faq-head > h2 {
+    font-size: 1.6rem;
+  }
+  .faq-ques {
+    font-size: 1.2rem;
+  }
+  .faq-ans {
     font-size: 1rem;
   }
 }
