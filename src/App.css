@@ -1,42 +1,101 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("/public/desktop-bg.png");
+}
+.logo {
+  margin-top: 2rem;
+  max-width: 338px;
+  margin-left: -0.6rem;
+}
+
+header > h2 {
+  color: #fff;
+  font-size: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+main {
+  margin-top: 1rem;
+  color: #fff;
+  text-align: center;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.bold {
+  font-weight: bold;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+main > h3 {
+  max-width: 44rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.star {
+  display: inline-block;
+  font-size: 2rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.socials > h4 {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.social-icon {
+  display: inline-block;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.social-icon > div > svg {
+  margin-bottom: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+@media only screen and (min-height: 900px) {
+  .logo {
+    margin-top: 15vh;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    background-image: url("/public/tablet-bg.png");
+  }
+  .logo {
+    margin-top: 6rem;
+    margin-left: -1.6rem;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media only screen and (max-width: 450px) {
+  .App {
+    background-image: url("/public/mobile-bg.png");
+    padding: 0.4rem;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .logo {
+    margin-top: 15vh;
+    max-width: 200px;
+  }
+  header > h2 {
+    font-size: 1.2rem;
+  }
+  main > h3 {
+    font-size: 1rem;
+  }
+  .socials > h4 {
+    font-size: 1rem;
+  }
 }
