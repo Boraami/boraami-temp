@@ -1,6 +1,7 @@
 export interface FAQType {
   question: string;
   answer: string;
+  link?: string;
 }
 
 export const FAQs: FAQType[] = [
@@ -48,6 +49,11 @@ news and information?`,
   {
     question: `Who are the people behind the app?`,
     answer: `The accounts that Boraami follows on all social media platforms are the people behind the app. We’re from all over the world and have come together for the love of BTS & ARMY 🫶`,
+  },
+  {
+    question: `How can I join the team if I wish to help with building Boraami?`,
+    answer: `We are looking for a number of positions, you can view the job descriptions and apply from `,
+    link: "https://www.notion.so/boraami/Open-positions-d250c219f0c6404b872887b070679dac",
   },
   {
     question: `When will the Boraami app be available?`,

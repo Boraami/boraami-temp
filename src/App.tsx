@@ -31,8 +31,11 @@ const App = () => {
           <h3>
             A safe and inclusive social media app for <span className="bold">ARMY</span> to stay connected, and support all the <span className="bold">BTS</span> members
           </h3>
+          <div className="blu-story">
+            In a world where colors define existence and in the midst of seeking solace, being compared to a falling red star was a symbol of uniqueness and radiance to them. One night, a red star
+            crashes upon a nearby hill and they collect its shattered remains, guarding their enigmatic power in secrecy.
+          </div>
           <div className="socials">
-            <span className="star">&#10022;</span>
             <h4>Let’s stay in touch and follow us on:</h4>
             <div className="social-media-icons">
               <SocialLink link="https://twitter.com/boraami_app" icon={<FaTwitterSquare />} />

@@ -1,21 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FAQType, FAQs } from "../constants/Faqs";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 interface FAQItem {
   faq: FAQType;
   expandAll: boolean;
-  setExpand: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const FAQItem = ({ faq, expandAll, setExpand }: FAQItem) => {
+const FAQItem = ({ faq, expandAll }: FAQItem) => {
   const [isActive, setIsActive] = useState(false);
-  const toggleExpand = () => {
+  const [prevExpandAll, setPrevExpandAll] = useState(expandAll);
+
+  if (prevExpandAll !== expandAll) {
     if (!!expandAll) {
-      setIsActive(false);
-    } else if (!expandAll) {
       setIsActive(true);
+    } else if (!expandAll) {
+      setIsActive(false);
     }
+    setPrevExpandAll(expandAll);
+  }
+
+  const toggleExpand = () => {
     setIsActive(!isActive);
   };
 
@@ -25,7 +30,16 @@ const FAQItem = ({ faq, expandAll, setExpand }: FAQItem) => {
         <div>&#10022; {faq.question}</div>
         <div>{isActive ? <IoIosArrowUp /> : <IoIosArrowDown />}</div>
       </div>
-      <div className={`faq-ans ${isActive ? "faq-open" : "faq-close"}`}>{faq.answer}</div>
+      <div className={`faq-ans ${isActive ? "faq-open" : "faq-close"}`}>
+        {faq.answer}
+        {faq.link ? (
+          <a target="_blank" href="https://www.notion.so/boraami/Open-positions-d250c219f0c6404b872887b070679dac">
+            here.
+          </a>
+        ) : (
+          ""
+        )}
+      </div>
     </div>
   );
 };
@@ -37,15 +51,15 @@ const FAQList = () => {
     <div className="faq-list">
       <div className="faq-head">
         <h2>Frequently Asked Questions</h2>
-        {/* <div className="faq-expandAll" onClick={() => setExpand(!expand)}>
+        <div className="faq-expandAll" onClick={() => setExpand(!expand)}>
           <div>
             <u>{expand ? "Collapse All" : "Expand All"}</u>
           </div>
           <div className="faq-expandAll-icon">{expand ? <IoIosArrowUp /> : <IoIosArrowDown />}</div>
-        </div> */}
+        </div>
       </div>
       {FAQs.map((data) => (
-        <FAQItem faq={data} expandAll={expand} setExpand={setExpand} key={data.question} />
+        <FAQItem faq={data} expandAll={expand} key={data.question} />
       ))}
     </div>
   );
