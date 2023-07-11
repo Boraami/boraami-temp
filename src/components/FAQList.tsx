@@ -9,14 +9,16 @@ interface FAQItem {
 
 const FAQItem = ({ faq, expandAll }: FAQItem) => {
   const [isActive, setIsActive] = useState(false);
+  const [prevExpandAll, setPrevExpandAll] = useState(expandAll);
 
-  useEffect(() => {
+  if (prevExpandAll !== expandAll) {
     if (!!expandAll) {
       setIsActive(true);
     } else if (!expandAll) {
       setIsActive(false);
     }
-  }, [expandAll]);
+    setPrevExpandAll(expandAll);
+  }
 
   const toggleExpand = () => {
     setIsActive(!isActive);
