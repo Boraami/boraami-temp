@@ -187,6 +187,9 @@ main > h3 {
   .faq-head {
     justify-content: center;
   }
+  .faq-expandAll {
+    display: none;
+  }
 }
 @media only screen and (max-width: 450px) {
   .hero {
