@@ -130,6 +130,11 @@ main > h3 {
   padding-top: 0.4rem;
 }
 
+.faq-ans > a {
+  link-decoration: none;
+  color: inherit;
+}
+
 .faq-close {
   max-height: 0;
   visibility: hidden;
