@@ -74,7 +74,10 @@ main > h3 {
 
 .social-icon > div > svg {
   margin-bottom: 0.2rem;
-  margin-left: 0.2rem;
+}
+
+.social-icon:first-child > div > svg {
+  margin-bottom: 0rem;
 }
 
 .faqs {
@@ -231,7 +234,8 @@ main > h3 {
     font-size: 0.8rem;
   }
   .social-media-icons {
-    gap: 2.5rem;
+    gap: 2rem;
+    padding: 0 0.2rem;
     padding-top: 0.5rem;
   }
   .faqs {
