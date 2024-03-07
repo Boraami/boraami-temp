@@ -10,6 +10,10 @@ export const FAQs: FAQType[] = [
     answer: `To provide a safe and inclusive space for ARMY to stay connected, lead with kindness and seamlessly support all the BTS members.`,
   },
   {
+    question: `Is this an official app?`,
+    answer: `No. This is an unofficial app made by Army for Army. BTS members won't be a part of Boraami unless they create secret accounts because we know they're everywhere 😉`,
+  },
+  {
     question: `Who can join the app?`,
     answer: `OT7 ARMY only. We want to keep the app environment positive and will not encourage or tolerate any negativity against any member or ARMY`,
   },
@@ -53,7 +57,7 @@ news and information?`,
   {
     question: `How can I join the team if I wish to help with building Boraami?`,
     answer: `We are looking for a number of positions, you can view the job descriptions and apply from `,
-    link: "https://www.notion.so/boraami/Open-positions-d250c219f0c6404b872887b070679dac",
+    link: "https://whispering-fountain-8f7.notion.site/Open-positions-1f7a31aee00449b697964a113aa58307?pvs=4",
   },
   {
     question: `When will the Boraami app be available?`,
