@@ -33,7 +33,7 @@ const FAQItem = ({ faq, expandAll }: FAQItem) => {
       <div className={`faq-ans ${isActive ? "faq-open" : "faq-close"}`}>
         {faq.answer}
         {faq.link ? (
-          <a target="_blank" href="https://www.notion.so/boraami/Open-positions-d250c219f0c6404b872887b070679dac">
+          <a target="_blank" href={faq.link}>
             here.
           </a>
         ) : (
