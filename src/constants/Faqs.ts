@@ -35,11 +35,10 @@ export const FAQs: FAQType[] = [
   },
   {
     question: `Will this be available in the App Store or Play Store?`,
-    answer: `Since this will be the first version of Boraami, we are going to have a web app to begin with. You will be able to bookmark the website on your phone and use it. We do plan on having it be a mobile app in a future version.`,
+    answer: `Yes! Boraami will be available for download on both the App Store and Play Store. Stay tuned for our first official release.`,
   },
   {
-    question: `How will the app stay up-to-date with the latest BTS 
-news and information?`,
+    question: `How will the app stay up-to-date with the latest BTS news and information?`,
     answer: `Once we are closer to releasing Boraami, we will be looking for several moderators and admins to keep up to up to date with all the releases and voting information. We will of course rely on you all to let us know if we miss anything once in a while.`,
   },
   {
@@ -48,7 +47,7 @@ news and information?`,
   },
   {
     question: `Will it be available in every country?`,
-    answer: `Yes! Since it will be a web app to start with, it will work anywhere that internet is available. We’ll do our due diligence to make sure that the app will be available in the app store/play store in the future too. We would like to have ARMY from all around the world be a part of this community.`,
+    answer: `Yes! It will work anywhere where it can be downloaded from the stores. We would like to have ARMY from all around the world be a part of this community.`,
   },
   {
     question: `Who are the people behind the app?`,
@@ -58,9 +57,5 @@ news and information?`,
     question: `How can I join the team if I wish to help with building Boraami?`,
     answer: `We are looking for a number of positions, you can view the job descriptions and apply from `,
     link: "https://whispering-fountain-8f7.notion.site/Open-positions-1f7a31aee00449b697964a113aa58307?pvs=4",
-  },
-  {
-    question: `When will the Boraami app be available?`,
-    answer: `Our team is working very hard and we’re hoping to make it available by the mid of 2024. Your support means the world to us, so thank you for being here ARMY. Borahae 💜`,
   },
 ];
