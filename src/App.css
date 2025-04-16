@@ -316,7 +316,7 @@ h1 .logo {
 
 @media (max-width: 640px) {
   .app {
-    background-position: -45rem 0;
+    background-position: -14rem -17rem;
   }
 
   main {
@@ -358,7 +358,7 @@ h1 .logo {
 
 @media (max-width: 375px) {
   .app {
-    background-position: -22rem -17rem;
+    background-position: -14rem -17rem;
   }
 
   .content {
