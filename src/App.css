@@ -1,350 +1,373 @@
 /* ======================
    Variables & Base Styles
    ====================== */
-   :root {
-    --primary-color: #280763;
-    --secondary-color: #100039;
-    --accent-color: #B48BFF;
-    --text-light: #fff;
-    --link-color: #336FF1;
-    --faq-highlight: #6C95EC;
-    --support-bg: #fff;
-  }
-  
-  .app {
-    background: 
-      url("/public/desktop-bg.png") center top / cover no-repeat fixed,
-      var(--primary-color);
-    padding-bottom: 7rem;
-    min-height: 100vh;
-  }
-  
-  .bold { font-weight: bold; }
-  
-  header > h2 {
-    color: var(--text-light);
-    font-size: 3rem;
-    font-weight: 900;
-    text-align: left;
-    padding-bottom: 1rem;
-    line-height: 1.2;
-  }
-  
-  /* ======================
+:root {
+  --primary-color: #280763;
+  --secondary-color: #100039;
+  --accent-color: #b48bff;
+  --text-light: #fff;
+  --link-color: #336ff1;
+  --faq-highlight: #6c95ec;
+  --support-bg: #fff;
+}
+
+.app {
+  background: url("/public/desktop-bg.png") center top / cover no-repeat fixed, var(--primary-color);
+  padding-bottom: 7rem;
+  min-height: 100vh;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+header > h2 {
+  color: var(--text-light);
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: left;
+  padding-bottom: 1rem;
+  line-height: 1.2;
+}
+
+/* ======================
      Layout Components
      ====================== */
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  main {
-    color: var(--text-light);
-    display: flex;
-    justify-content: center;
-    padding-top: 3rem;
-    gap: 2rem;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    padding-top: 10rem;
-  }
-  
-  .screenshot {
-    min-width: 532px;
-    padding-right: 5rem;
-    align-self: center;
-  }
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .sections {
-    padding: 0 1rem;
-  }
-  
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2rem 0;
-  }
-  
-  /* Logo Styles */
-  .logo {
-    margin: 2rem auto;
-    max-width: 200px;
-    transition: transform 0.3s ease;
-  }
-  
-  h1 .logo {
-    display: none;
-    margin: 2rem 0 1rem -0.6rem;
-    max-width: 338px;
-  }
-  
-  /* ======================
+main {
+  color: var(--text-light);
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  gap: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding-top: 10rem;
+}
+
+.screenshot {
+  min-width: 532px;
+  padding-right: 5rem;
+  align-self: center;
+}
+
+.sections {
+  padding: 0 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Logo Styles */
+.logo {
+  margin: 2rem auto;
+  max-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+h1 .logo {
+  display: none;
+  margin: 2rem 0 1rem -0.6rem;
+  max-width: 338px;
+}
+
+/* ======================
      Support Section
      ====================== */
-  .support {
-    background: var(--support-bg);
-    color: var(--secondary-color);
-    border-radius: 1rem;
-    padding: 2rem 3rem;
-    max-width: 48rem;
-    margin: 1rem auto 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .support h3 {
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-  }
-  
-  .support a {
-    color: var(--link-color);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-  
-  .support a:hover {
-    color: darken(var(--link-color), 5%);
-  }
-  
-  /* ======================
+.support {
+  background: var(--support-bg);
+  color: var(--secondary-color);
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  max-width: 48rem;
+  margin: 1rem auto 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.support h3 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.support a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.support a:hover {
+  color: darken(var(--link-color), 5%);
+}
+
+/* ======================
      Social Media
      ====================== */
-  .socials {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 0;
-    max-width: 300px;
-  }
-  
-  .socials > h4 {
-    font-weight: 500;
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .social-media-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 1rem;
-  }
-  
-  .social-icon {
-    color: var(--accent-color);
-    transition: transform 0.2s ease, color 0.2s ease;
-    padding-right: 1rem;
-  }
+.socials {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  max-width: 300px;
+}
 
-  .social-icon:nth-child(3) {
-    padding: 2px 1rem 0 0;
-  }
+.socials > h4 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
 
-  .social-icon:last-child {
-    position: relative;
-    left: -8px;
-    padding-right: 0;
-  }
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
 
-  .social-icon:hover {
-    transform: translateY(-3px);
-    color: lighten(var(--accent-color), 5%);
-  }
-  
-  /* ======================
+.social-icon {
+  color: var(--accent-color);
+  transition: transform 0.2s ease, color 0.2s ease;
+  padding-right: 1rem;
+}
+
+.social-icon:nth-child(3) {
+  padding: 2px 1rem 0 0;
+}
+
+.social-icon:last-child {
+  position: relative;
+  left: -8px;
+  padding-right: 0;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  color: lighten(var(--accent-color), 5%);
+}
+
+/* ======================
      FAQ Section
      ====================== */
-  .faqs {
-    background: var(--secondary-color);
-    max-width: 48rem;
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-  
-  .faq-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-    color: var(--text-light);
-    padding: 0 0.5rem;
-  }
-  
-  .faq-head > h2 {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  
-  .faq-expandAll {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    color: var(--accent-color);
-    transition: color 0.2s ease;
-  }
+.faqs {
+  background: var(--secondary-color);
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
 
-  .faq-expandAll-icon {
-    padding: 5px 0 0 1rem;
-  }
-  
-  .faq-expandAll:hover {
-    color: lighten(var(--accent-color), 10%);
-  }
-  
-  .faq-item {
-    padding: 1.3rem 0;
-    border-top: 1px solid var(--accent-color);
-    transition: background-color 0.2s ease;
-  }
-  
-  .faq-item:hover {
-    background-color: rgba(180, 139, 255, 0.05);
-  }
-  
-  .faq-ques {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: start;
-    cursor: pointer;
-    color: var(--text-light);
-    font-size: 1.2rem;
-  }
+.faq-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  padding: 0 0.5rem;
+}
 
-  .faq-ques-header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 1rem;
-  }
-  
-  .faq-title {
-    display: inline;
-    font-weight: 500;
-    color: var(--accent-color);
-    font-size: 1.1rem;
-    text-align: left;
-  }
-  
-  .faq-ans {
-    color: var(--text-light);
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  .faq-ans > a {
-    color: var(--faq-highlight);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-  
-  .faq-ans > a:hover {
-    text-decoration: underline;
-  }
-  
-  /* FAQ States */
-  .faq-close {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-  }
-  
-  .faq-open {
-    max-height: 500px;
-    transition: max-height 0.3s ease-in;
-    padding: 0.5rem 0 0 2rem;
-  }
-  
-  /* ======================
+.faq-head > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.faq-expandAll {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--accent-color);
+  transition: color 0.2s ease;
+}
+
+.faq-expandAll-icon {
+  padding: 5px 0 0 1rem;
+}
+
+.faq-expandAll:hover {
+  color: lighten(var(--accent-color), 10%);
+}
+
+.faq-item {
+  padding: 1.3rem 0;
+  border-top: 1px solid var(--accent-color);
+  transition: background-color 0.2s ease;
+}
+
+.faq-item:hover {
+  background-color: rgba(180, 139, 255, 0.05);
+}
+
+.faq-ques {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: start;
+  cursor: pointer;
+  color: var(--text-light);
+  font-size: 1.2rem;
+}
+
+.faq-ques-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.faq-title {
+  display: inline;
+  font-weight: 500;
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.faq-ans {
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.faq-ans > a {
+  color: var(--faq-highlight);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.faq-ans > a:hover {
+  text-decoration: underline;
+}
+
+/* FAQ States */
+.faq-close {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-open {
+  max-height: 500px;
+  transition: max-height 0.3s ease-in;
+  padding: 0.5rem 0 0 2rem;
+}
+
+/* ======================
      Responsive Breakpoints
      ====================== */
 
-  @media (max-width: 1024px) {
-    .app { padding-bottom: 3rem; }
-    
-    .content {
-      width: 100%;
-      max-width: 24rem;
-      padding: 2rem 2rem 0;
-      text-align: center;
-    }
-    
-    .screenshot {
-      min-width: auto;
-      width: 20rem;
-      padding-right: 0;
-      margin: 0 auto;
-    }
-    .screenshot img{
-      width: 20rem;
-    }
-    
-    header > h2 {
-      font-size: 2rem;
-      text-align: center;
-    }
-    
-    h1 .logo {
-      display: block;
-      margin: 0 auto 1rem;
-      max-width: 12rem;
-    }
+@media (max-width: 1024px) {
+  .app {
+    padding-bottom: 3rem;
   }
-  
-  @media (max-width: 640px) {
-    .app { background-position: -45rem 0; }
-    
-    main {
-      flex-direction: column-reverse;
-      padding-top: 1rem;
-      gap: 1rem;
-    }
-    
-    .content {
-      width: 100%;
-      max-width: 24rem;
-      padding: 2rem 2rem 0;
-      text-align: center;
-    }
-    
-    .screenshot {
-      min-width: auto;
-      width: 20rem;
-      padding-right: 0;
-      margin: 0 auto;
-    }
-    .screenshot img{
-      width: 20rem;
-    }
-    
-    .faq-head {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-    
-    .faq-ques { font-size: 1rem; }
-    .faq-ans { font-size: 0.9rem; }
+
+  .content {
+    width: 100%;
+    max-width: 24rem;
+    padding: 2rem 2rem 0;
+    text-align: center;
+    align-items: center;
   }
-  
-  @media (max-width: 375px) {
-    .app { background-position: -22rem -17rem; }
-    
-    .content {
-      width: 100%;
-      padding: 2rem 1rem 0;
-    }
-    
-    header > h2,
-    .faq-head h2 { font-size: 1.8rem; }
+  .content p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
+
+  .screenshot {
+    min-width: auto;
+    /* width: 25rem; */
+    padding-right: 0;
+    margin: 0 auto;
+  }
+  .screenshot img {
+    width: 15rem;
+  }
+
+  header > h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  h1 .logo {
+    display: block;
+    margin: 0 auto 1rem;
+    max-width: 12rem;
+  }
+  .social-icon {
+    padding-right: 0.5rem;
+  }
+  .social-icon:nth-child(3) {
+    padding-right: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .app {
+    background-position: -45rem 0;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    padding-top: 1rem;
+    gap: 1rem;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 24rem;
+    padding: 2rem 2rem 0;
+    text-align: center;
+  }
+
+  .screenshot {
+    min-width: auto;
+    width: 20rem;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+  .screenshot img {
+    width: 20rem;
+  }
+
+  .faq-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .faq-ques {
+    font-size: 1rem;
+  }
+  .faq-ans {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .app {
+    background-position: -22rem -17rem;
+  }
+
+  .content {
+    width: 100%;
+    padding: 2rem 1rem 0;
+  }
+
+  header > h2,
+  .faq-head h2 {
+    font-size: 1.8rem;
+  }
+}
