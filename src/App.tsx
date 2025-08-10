@@ -1,3 +1,4 @@
+import { Routes, Route, Link } from "react-router-dom";
 import boraamiLogo from "./assets/boraami-primary-horizontal-logo.svg";
 import blueHeroImg from "./assets/blu-app.png";
 import TiktokIcon from "./assets/TiktokIcon";
@@ -6,6 +7,9 @@ import BlueskyIcon from "./assets/BlueskyIcon";
 import InstagramIcon from "./assets/InstagramIcon";
 import SpotifyIcon from "./assets/SpotifyIcon";
 import FAQList from "./components/FAQList";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import Terms from "./components/Terms";
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
 interface LinkProps {
@@ -21,9 +25,9 @@ const SocialLink = ({ link, icon }: LinkProps) => {
   );
 };
 
-const App = () => {
+const HomePage = () => {
   return (
-    <div className="app">
+    <div className="app homepage">
       {/* Hero Section */}
       <div className="hero">
         <main>
@@ -83,9 +87,35 @@ const App = () => {
         </section>
       </div>
       <footer>
-        <img src={boraamiLogo} className="logo" alt="Boraami Logo" />
+        <div className="footer-content">
+          <div className="footer-column">
+            <img src={boraamiLogo} alt="Boraami Logo" className="footer-logo" />
+            <p>© 2025 Boraami. All rights reserved.</p>
+          </div>
+          <div className="footer-column">
+            <Link to="/privacy-policy" className="footer-link">
+              Privacy Policy
+            </Link>
+            <Link to="/terms" className="footer-link">
+              Terms & Conditions
+            </Link>
+          </div>
+        </div>
       </footer>
     </div>
+  );
+};
+
+const App = () => {
+  return (
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<Terms />} />
+      </Routes>
+    </>
   );
 };
 
