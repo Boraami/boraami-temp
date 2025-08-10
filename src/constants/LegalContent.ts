@@ -12,7 +12,7 @@ export interface LegalPageData {
 }
 
 export const privacyPolicyData: LegalPageData = {
-  title: "BORAAMI PRIVACY POLICY",
+  title: "PRIVACY POLICY",
   effectiveDate: "August 10, 2025",
   lastUpdated: "August 10, 2025",
   sections: [
@@ -22,7 +22,7 @@ export const privacyPolicyData: LegalPageData = {
         "This Privacy Policy applies to all Boraami digital platforms including the Boraami App and website.",
         "Developer: Boraami",
         "Website: https://boraami.app",
-        "Contact: support@boraami.app or boraami.app@gmail.com",
+        "Contact: contact@boraami.app",
       ],
     },
     {
@@ -171,7 +171,7 @@ export const privacyPolicyData: LegalPageData = {
         "• Withdraw consent at any time (for marketing or optional analytics)",
         "• Object to or restrict processing",
         "",
-        "To exercise these rights, contact us at: support@boraami.app",
+        "To exercise these rights, contact us at: contact@boraami.app",
       ],
     },
     {
@@ -191,7 +191,7 @@ export const privacyPolicyData: LegalPageData = {
       content: [
         "For questions or concerns about this Privacy Policy, contact us at:",
         "",
-        "Email: support@boraami.app",
+        "Email: contact@boraami.app",
         "",
         "Thank you for trusting Boraami.",
       ],
@@ -200,7 +200,7 @@ export const privacyPolicyData: LegalPageData = {
 };
 
 export const termsData: LegalPageData = {
-  title: "BORAAMI TERMS AND CONDITIONS",
+  title: "TERMS AND CONDITIONS",
   effectiveDate: "August 10, 2025",
   lastUpdated: "August 10, 2025",
   sections: [
@@ -285,7 +285,7 @@ export const termsData: LegalPageData = {
       title: "13. CONTACT INFORMATION",
       content: [
         "For any questions or concerns regarding these Terms, please contact us at:",
-        "Email: support@boraami.app",
+        "Email: contact@boraami.app",
         "Developer: Boraami",
       ],
     },
