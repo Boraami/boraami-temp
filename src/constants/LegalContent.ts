@@ -281,7 +281,52 @@ export const termsData: LegalPageData = {
       ],
     },
     {
-      title: "13. CONTACT INFORMATION",
+      title: "13. COMMUNITY GUIDELINES & CODE OF CONDUCT",
+      content:
+        "By using Boraami, you agree to maintain respectful behavior and follow these community guidelines:",
+    },
+    {
+      title: "13.1 Respect BTS and Each Other",
+      content:
+        "Respect and support all 7 members equally, refraining from arguments that don't align with an OT7 mindset. Treat fellow ARMY members with kindness, fostering a positive atmosphere and avoiding negativity, even if you disagree with them.",
+    },
+    {
+      title: "13.2 Privacy Protection",
+      content:
+        "Protect BTS' and fellow ARMY's privacy, avoid sharing unauthorized content or supporting invasive behavior. Don't share personal information that could put you or others in danger (i.e. doxxing).",
+    },
+    {
+      title: "13.3 Appropriate Content",
+      content:
+        "Be mindful of others' feelings and avoid derogatory language or behavior. Avoid posting or sharing content that is sexually explicit, obscene, or otherwise inappropriate for the platform's intended audience.",
+    },
+    {
+      title: "13.4 Anti-Bullying Policy",
+      content:
+        "Refrain from cyberbullying or stalking BTS and others. Any form of harassment, intimidation, or threatening behavior will not be tolerated.",
+    },
+    {
+      title: "13.5 Legal and Ethical Standards",
+      content:
+        "Adhere to legal and ethical standards when engaging in fandom activities, and avoid behavior that could violate the law or ethical principles.",
+    },
+    {
+      title: "13.6 Platform Responsibility",
+      content:
+        "Avoid spamming, phishing and impersonations. Use Boraami's features as intended and respect the platform's resources.",
+    },
+    {
+      title: "13.7 Accountability",
+      content:
+        "Take responsibility for your words and actions; be willing to apologize for mistakes, and report inappropriate content. Help us maintain a safe and fun environment for all ARMY.",
+    },
+    {
+      title: "13.8 Enforcement",
+      content:
+        "Violation of these community guidelines may result in content removal, warnings, temporary suspension, or permanent account termination, depending on the severity and frequency of violations.",
+    },
+    {
+      title: "14. CONTACT INFORMATION",
       content: [
         "For any questions or concerns regarding these Terms, please contact us at:",
         "Email: contact@boraami.app",
