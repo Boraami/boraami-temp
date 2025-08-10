@@ -20,7 +20,6 @@ export const privacyPolicyData: LegalPageData = {
       title: "1. WHO WE ARE",
       content: [
         "This Privacy Policy applies to all Boraami digital platforms including the Boraami App and website.",
-        "Developer: Boraami",
         "Website: https://boraami.app",
         "Contact: contact@boraami.app",
       ],
@@ -286,7 +285,6 @@ export const termsData: LegalPageData = {
       content: [
         "For any questions or concerns regarding these Terms, please contact us at:",
         "Email: contact@boraami.app",
-        "Developer: Boraami",
       ],
     },
   ],
