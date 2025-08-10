@@ -27,8 +27,11 @@ const FAQItem = ({ faq, expandAll }: FAQItem) => {
   return (
     <div className="faq-item">
       <div className="faq-ques" onClick={toggleExpand}>
-        <div>&#10022; {faq.question}</div>
-        <div>{isActive ? <IoIosArrowUp /> : <IoIosArrowDown />}</div>
+        <div className="faq-ques-header">
+          <div className="faq-icon">&#10022;</div>
+          <div><h4 className="faq-title">{faq.question}</h4></div>
+        </div>
+        <div className="faq-arrow">{isActive ? <IoIosArrowUp /> : <IoIosArrowDown />}</div>
       </div>
       <div className={`faq-ans ${isActive ? "faq-open" : "faq-close"}`}>
         {faq.answer}
@@ -53,7 +56,7 @@ const FAQList = () => {
         <h2>Frequently Asked Questions</h2>
         <div className="faq-expandAll" onClick={() => setExpand(!expand)}>
           <div>
-            <u>{expand ? "Collapse All" : "Expand All"}</u>
+            <p>{expand ? "Collapse All" : "Expand All"}</p>
           </div>
           <div className="faq-expandAll-icon">{expand ? <IoIosArrowUp /> : <IoIosArrowDown />}</div>
         </div>
