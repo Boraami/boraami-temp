@@ -334,3 +334,201 @@ export const termsData: LegalPageData = {
     },
   ],
 };
+export const childSafetyPolicyData: LegalPageData = {
+  title: "CHILD SAFETY POLICY",
+  effectiveDate: "August 12, 2025",
+  lastUpdated: "August 12, 2025",
+  sections: [
+    {
+      title: "1. OUR COMMITMENT TO CHILD SAFETY",
+      content: [
+        "Boraami is committed to creating a safe environment for all users in our BTS fan community. We maintain a zero-tolerance policy against Child Sexual Abuse and Exploitation (CSAE), including Child Sexual Abuse Material (CSAM).",
+        "This policy applies to all users and content on our platform, regardless of age targeting, and outlines our standards, reporting mechanisms, and enforcement procedures.",
+      ],
+    },
+    {
+      title: "2. ZERO-TOLERANCE POLICY AGAINST CSAE",
+      content:
+        "Boraami strictly prohibits any content or behavior that facilitates, depicts, or promotes Child Sexual Abuse and Exploitation. We take immediate action against all violations.",
+      subsections: [
+        {
+          title: "Prohibited Content and Behavior:",
+          content: [
+            "• Child Sexual Abuse Material (CSAM): Any visual, written, or audio content that sexually exploits minors",
+            "• Grooming: Attempts to build inappropriate relationships with minors for sexual purposes",
+            "• Solicitation: Requesting or sharing intimate content involving minors",
+            "• Exploitation: Any content that sexualizes, endangers, or harms individuals under 18",
+            "• Predatory Behavior: Using our platform to target, manipulate, or harm minors",
+          ],
+        },
+      ],
+    },
+    {
+      title: "3. CONTENT MODERATION AND DETECTION",
+      content: [
+        "We employ multiple layers of protection to detect and prevent harmful content:",
+        "• Manual review of all reported content by our trained safety team",
+        "• Regular monitoring of user-generated content and interactions",
+        "• Community-driven reporting system with multiple reporting channels",
+        "• Proactive scanning for suspicious patterns and behaviors",
+        "• Collaboration with law enforcement and child safety organizations when required",
+      ],
+    },
+    {
+      title: "4. REPORTING MECHANISMS",
+      content: ["We provide multiple ways for users to report concerning content or behavior:"],
+      subsections: [
+        {
+          title: "In-App Reporting:",
+          content: [
+            "• Report buttons available on all posts, replies, and user profiles",
+            "• Dedicated reporting form accessible through app settings",
+            "• Anonymous reporting option to protect reporter privacy",
+            "• Ability to upload screenshots as evidence of violations",
+          ],
+        },
+        {
+          title: "External Reporting Channels:",
+          content: [
+            "• Email: support@boraami.app (monitored daily)",
+            "• Online reporting form with dropdown menu for violation categories",
+            "• Emergency situations: Users encouraged to contact local law enforcement immediately",
+          ],
+        },
+        {
+          title: "What to Include in Reports:",
+          content: [
+            "• Detailed description of the violation",
+            "• Username or profile information of the violating account",
+            "• Screenshots or evidence of the inappropriate content/behavior",
+            "• Date and time of the incident",
+            "• Any additional context that may help our investigation",
+          ],
+        },
+      ],
+    },
+    {
+      title: "5. REPORT REVIEW AND RESPONSE PROCESS",
+      content: [
+        "Our dedicated safety team follows a structured process for all reports:",
+        "• All child safety reports receive immediate priority review",
+        "• Initial assessment within 24 hours of report submission",
+        "• Thorough investigation by trained safety specialists",
+        "• Final determination and action within 72 hours",
+        "• Follow-up communication with reporters when appropriate",
+      ],
+    },
+    {
+      title: "6. ENFORCEMENT ACTIONS",
+      content: ["We take swift and decisive action against policy violations:"],
+      subsections: [
+        {
+          title: "Immediate Actions for CSAE/CSAM Violations:",
+          content: [
+            "• Immediate account suspension pending full investigation",
+            "• Removal of all violating content within hours of confirmation",
+            "• Permanent account termination for confirmed violations",
+            "• Device and IP blocking to prevent account recreation",
+            "• Reporting to National Center for Missing & Exploited Children (NCMEC) and relevant authorities",
+          ],
+        },
+        {
+          title: "Progressive Enforcement for Other Safety Violations:",
+          content: [
+            "• First offense: Warning and content removal with mandatory policy review",
+            "• Second offense: Temporary account suspension (7-30 days)",
+            "• Third offense: Extended suspension or permanent termination",
+            "• Serious violations: Immediate permanent account termination regardless of history",
+          ],
+        },
+      ],
+    },
+    {
+      title: "7. COOPERATION WITH LAW ENFORCEMENT",
+      content: [
+        "Boraami maintains full cooperation with law enforcement and child protection agencies:",
+        "• Mandatory reporting of CSAM to NCMEC and international equivalents within 24 hours",
+        "• Preservation of evidence for law enforcement investigations",
+        "• Compliance with legal requests, subpoenas, and court orders",
+        "• Proactive communication with authorities regarding serious threats to child safety",
+        "• Regular coordination with industry partners to combat online child exploitation",
+      ],
+    },
+    {
+      title: "8. PRIVACY AND DATA PROTECTION",
+      content: [
+        "We protect user privacy while maintaining safety standards:",
+        "• Secure handling and storage of reported content and evidence",
+        "• Limited access to sensitive reports (safety team and authorized personnel only)",
+        "• Reporter anonymity protection when requested",
+        "• Compliance with privacy laws while fulfilling legal obligations to report CSAE",
+        "• Regular deletion of resolved case materials according to data retention policies",
+      ],
+    },
+    {
+      title: "9. COMMUNITY EDUCATION AND PREVENTION",
+      content: [
+        "We actively work to educate our community about online safety:",
+        "• Regular safety reminders and educational content within the app",
+        "• Clear community guidelines emphasizing respectful behavior",
+        "• Resources for recognizing and reporting suspicious behavior",
+        "• Promotion of positive community interactions focused on BTS and music appreciation",
+        "• Collaboration with child safety organizations for educational initiatives",
+      ],
+    },
+    {
+      title: "10. TRANSPARENCY AND ACCOUNTABILITY",
+      content: [
+        "We maintain transparency in our child safety efforts:",
+        "• Regular review and updates of our child safety policies",
+        "• Cooperation with third-party safety audits when requested",
+        "• Participation in industry initiatives to combat online child exploitation",
+        "• Clear communication about policy changes and enforcement statistics",
+        "• Commitment to continuous improvement of our safety measures",
+      ],
+    },
+    {
+      title: "11. LEGAL COMPLIANCE",
+      content: [
+        "Our child safety measures comply with applicable laws and regulations:",
+        "• United States: NCMEC reporting requirements and federal anti-CSAM laws",
+        "• European Union: Digital Services Act and national child protection legislation",
+        "• International: Cooperation with global law enforcement and child safety organizations",
+        "• Industry Standards: Adherence to best practices for online child safety",
+        "• Regular legal review to ensure continued compliance with evolving regulations",
+      ],
+    },
+    {
+      title: "12. CONTACT INFORMATION FOR CHILD SAFETY",
+      content: [
+        "For all child safety related concerns, contact us immediately:",
+        "",
+        "Primary Contact: support@boraami.app",
+        "Subject Line: URGENT - Child Safety Report",
+        "Response Time: Priority review within 24 hours",
+        "",
+        "Online Reporting Form: Available in app settings menu",
+        "Emergency Situations: Contact local law enforcement (911 in US, 999 in UK, etc.)",
+        "",
+        "For Law Enforcement Requests:",
+        "Email: support@boraami.app",
+        "Subject: Law Enforcement Request",
+        "",
+        "We are committed to responding promptly to all child safety concerns and working with authorities to protect children from online harm.",
+      ],
+    },
+    {
+      title: "13. POLICY UPDATES",
+      content: [
+        "This Child Safety Policy may be updated to reflect changes in our practices, technology, or legal requirements. Users will be notified of significant changes through:",
+        "• In-app notifications for major policy updates",
+        "• Email notifications to registered users",
+        "• Clear indication of changes and effective dates on our website",
+        "• Regular policy review schedule to ensure continued effectiveness",
+        "",
+        "Last Review Date: August 12, 2025",
+        "Next Scheduled Review: February 12, 2026",
+      ],
+    },
+  ],
+};

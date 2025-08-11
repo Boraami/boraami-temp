@@ -10,6 +10,7 @@ import FAQList from "./components/FAQList";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Terms from "./components/Terms";
 import ScrollToTop from "./components/ScrollToTop";
+import SafetyPolicyPage from "./pages/SafetyPolicyPage";
 import "./App.css";
 
 interface LinkProps {
@@ -99,6 +100,9 @@ const HomePage = () => {
             <Link to="/terms" className="footer-link">
               Terms & Conditions
             </Link>
+            <Link to="/safety-policy" className="footer-link">
+              Safety Policy
+            </Link>
           </div>
         </div>
       </footer>
@@ -114,6 +118,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/safety-policy" element={<SafetyPolicyPage />} />
       </Routes>
     </>
   );
