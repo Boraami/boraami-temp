@@ -10,29 +10,43 @@ interface LegalPageRendererProps {
 const LegalPageRenderer: React.FC<LegalPageRendererProps> = ({ data, pageType }) => {
   const renderContent = (content: string | string[]) => {
     const renderTextWithLinks = (text: string) => {
-      // Convert email addresses to clickable links
-      const emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g;
-      const parts = text.split(emailRegex);
-      const emails = text.match(emailRegex) || [];
+      const urlRegex = /(https?:\/\/[^\s]+)/g;
+      const emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/g;
 
-      if (emails.length === 0) return text;
-
-      const result = [];
-      for (let i = 0; i < parts.length; i++) {
-        if (parts[i]) result.push(parts[i]);
-        if (emails[i]) {
-          result.push(
-            <a key={i} href={`mailto:${emails[i]}`} target="_blank" rel="noopener noreferrer">
-              {emails[i]}
+      // Split on spaces but keep them so styling/spacing is preserved
+      return text.split(/(\s+)/).map((part, idx) => {
+        if (urlRegex.test(part)) {
+          return (
+            <a
+              key={`url-${idx}`}
+              href={part}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              {part}
             </a>
           );
         }
-      }
-      return result;
+        if (emailRegex.test(part)) {
+          return (
+            <a
+              key={`email-${idx}`}
+              href={`mailto:${part}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              {part}
+            </a>
+          );
+        }
+        return part;
+      });
     };
 
     if (Array.isArray(content)) {
-      // Check if content contains a table (has | separator)
+      // Table rendering
       if (content.some((item) => item.includes("|"))) {
         const tableRows = content.filter((item) => item.includes("|") && !item.startsWith("---"));
         const headerRow = tableRows[0];
@@ -62,14 +76,13 @@ const LegalPageRenderer: React.FC<LegalPageRendererProps> = ({ data, pageType })
         }
       }
 
-      // Check if content looks like a list (starts with bullet points or numbered items)
+      // List rendering
       if (content.some((item) => item.trim().startsWith("•") || item.trim().match(/^\d+\./))) {
         return (
           <ul>
             {content
               .map((item, index) => {
                 const cleanItem = item.replace(/^[•\d\.\s]+/, "").trim();
-                // Only render list items that have actual content
                 if (cleanItem) {
                   return <li key={index}>{renderTextWithLinks(cleanItem)}</li>;
                 }
@@ -80,11 +93,12 @@ const LegalPageRenderer: React.FC<LegalPageRendererProps> = ({ data, pageType })
         );
       }
 
-      // Filter out empty items and render paragraphs
+      // Paragraph rendering
       return content
         .filter((item) => item.trim() !== "")
         .map((item, index) => <p key={index}>{renderTextWithLinks(item)}</p>);
     }
+
     return <p>{renderTextWithLinks(content)}</p>;
   };
 
