@@ -101,7 +101,7 @@ const HomePage = () => {
               Terms & Conditions
             </Link>
             <Link to="/safety-policy" className="footer-link">
-              Safety Policy
+              Child Safety Policy
             </Link>
           </div>
         </div>
