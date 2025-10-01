@@ -13,8 +13,8 @@ export interface LegalPageData {
 
 export const privacyPolicyData: LegalPageData = {
   title: "PRIVACY POLICY",
-  effectiveDate: "August 10, 2025",
-  lastUpdated: "August 10, 2025",
+  effectiveDate: "October 1, 2025",
+  lastUpdated: "October 1, 2025",
   sections: [
     {
       title: "1. WHO WE ARE",
@@ -50,16 +50,21 @@ export const privacyPolicyData: LegalPageData = {
         },
         {
           title: "C. Information We Do NOT Collect:",
-          content: ["• Payment data", "• Media uploads", "• Precise geolocation"],
+          content: [
+            "• Payment data",
+            "• Media uploads",
+            "• Precise geolocation",
+            "• Date of birth (unless required for legal compliance)",
+          ],
         },
       ],
     },
     {
       title: "3. HOW WE COLLECT DATA",
-      content: "Data is collected through:",
+      content: "",
       subsections: [
         {
-          title: "Data Collection Methods:",
+          title: "Data is collected through:",
           content: [
             "• Direct input (signup forms, support, content interactions)",
             "• Cookies and browser storage",
@@ -86,6 +91,7 @@ export const privacyPolicyData: LegalPageData = {
     },
     {
       title: "5. HOW WE USE YOUR INFORMATION",
+
       content: [
         "We use your personal information to:",
         "• Authenticate users and manage sessions",
@@ -106,12 +112,72 @@ export const privacyPolicyData: LegalPageData = {
         "",
         "You can manage cookie preferences through your browser. Some features may be affected if cookies are disabled.",
         "",
-        "On the App:",
-        "We do not use cookies. Usage tracking is handled via analytics SDKs.",
+        "On the App: We do not use cookies. Usage tracking is handled via analytics SDKs.",
       ],
     },
     {
-      title: "7. THIRD-PARTY SERVICES",
+      title: "7. DATA RETENTION AND DELETION",
+      content: [
+        "We will retain your personal information only for as long as is necessary for the purposes set out in this Policy, or as needed to comply with our legal obligations, resolve disputes, and enforce our agreements.",
+        "",
+        "• Account Data: We retain the personal data associated with your account for the entire period your account is active. Upon account deletion, we will initiate the deletion process from our active databases within 30 days. Please note that due to our backup and disaster recovery systems, residual copies may take additional time to be permanently removed.",
+        "• Other Data: Non-personal, aggregated data may be retained indefinitely to help us improve our services.",
+      ],
+    },
+    {
+      title: "8. INTERNATIONAL DATA TRANSFER AND STORAGE",
+      content: [
+        "Your personal information may be processed and stored on servers located outside of the country in which you reside, including in the United States. These countries may have data protection laws that are different from the laws of your country.",
+        "",
+        "However, we take appropriate safeguards to ensure that your data receives an adequate level of protection. We rely on recognized legal mechanisms for these transfers, such as the European Commission's Standard Contractual Clauses, to ensure your rights and protections travel with your data.",
+        "",
+        "By accessing or using our Services, you acknowledge and agree that your personal information may be transferred to, processed, and stored in the United States and other jurisdictions where data protection laws may differ from those in your country of residence. Where required, we rely on lawful transfer mechanisms such as the European Commission's Standard Contractual Clauses. By continuing to use the Services, you expressly consent to such transfers.",
+      ],
+    },
+    {
+      title: "9. YOUR DATA RIGHTS AND PROCESS",
+      content: [
+        "Depending on your jurisdiction (e.g., GDPR or CCPA), you may have the right to:",
+        "• Access the data we hold about you",
+        "• Correct or delete your personal information",
+        "• Withdraw consent at any time (for marketing or optional analytics)",
+        "• Object to or restrict processing",
+        "• Data portability",
+        "",
+        "Process to Exercise Your Rights:",
+        "To exercise any of these rights, please contact us at contact@boraami.app. We will respond to all legitimate requests within 30 days. We may need to verify your identity before processing your request. If we require more time, we will inform you of the reason and extension period.",
+      ],
+    },
+    {
+      title: "10. CHILDREN'S PRIVACY",
+      content: [
+        "Our app and website are not intended for children under 13. We do not knowingly collect personal data from anyone under this age. If we become aware of such data, we will delete it immediately.",
+      ],
+    },
+    {
+      title: "11. DATA SECURITY",
+      content: [
+        "We implement technical and organizational measures to protect your information, including:",
+        "• Encrypted storage of access tokens",
+        "• Secure servers and API communications",
+        "• Access controls and logging",
+        "",
+        "While we strive to use commercially acceptable means, no method is 100% secure.",
+      ],
+    },
+    {
+      title: "12. DATA SHARING",
+      content: [
+        "We do not sell or rent your personal information.",
+        "We may share information:",
+        "• With service providers under confidentiality agreements",
+        "• As required by law or legal process",
+        "• To enforce our rights or protect safety",
+      ],
+    },
+
+    {
+      title: "13. THIRD-PARTY SERVICES",
       content: [
         "We use trusted third-party providers to operate, analyze, and improve our services:",
       ],
@@ -121,9 +187,9 @@ export const privacyPolicyData: LegalPageData = {
           content: [
             "Service | Purpose",
             "--------|--------",
-            "Amplitude Analytics | In-app usage tracking",
-            "Sentry | Error/crash reporting",
-            "Expo Secure Store | Secure token storage (App)",
+            "[Amplitude Analytics](https://amplitude.com/privacy) | In-app usage tracking",
+            "[Sentry](https://sentry.io/privacy/) | Error/crash reporting",
+            "[Expo Secure Store](https://docs.expo.dev/versions/latest/sdk/securestore/) | Secure token storage (App)",
           ],
         },
         {
@@ -135,58 +201,25 @@ export const privacyPolicyData: LegalPageData = {
       ],
     },
     {
-      title: "8. DATA SHARING",
-      content: [
-        "We do not sell or rent your personal information.",
-        "We may share information:",
-        "• With service providers under confidentiality agreements",
-        "• As required by law or legal process",
-        "• To enforce our rights or protect safety",
-      ],
-    },
-    {
-      title: "9. DATA SECURITY",
-      content: [
-        "We implement technical and organizational measures to protect your information, including:",
-        "• Encrypted storage of access tokens",
-        "• Secure servers and API communications",
-        "• Access controls and logging",
-        "",
-        "While we strive to use commercially acceptable means, no method is 100% secure.",
-      ],
-    },
-    {
-      title: "10. CHILDREN'S PRIVACY",
-      content: [
-        "Our app and website are not intended for children under 13. We do not knowingly collect personal data from anyone under this age. If we become aware of such data, we will delete it immediately.",
-      ],
-    },
-    {
-      title: "11. YOUR RIGHTS",
-      content: [
-        "Depending on your jurisdiction (e.g., GDPR or CCPA), you may have the right to:",
-        "• Access the data we hold about you",
-        "• Correct or delete your personal information",
-        "• Withdraw consent at any time (for marketing or optional analytics)",
-        "• Object to or restrict processing",
-        "",
-        "To exercise these rights, contact us at: contact@boraami.app",
-      ],
-    },
-    {
-      title: "12. THIRD-PARTY LINKS",
+      title: "14. THIRD-PARTY LINKS",
       content: [
         "Our platforms may contain links to external websites. We are not responsible for their content or privacy practices. Please review their policies before sharing data.",
       ],
     },
     {
-      title: "13. CHANGES TO THIS PRIVACY POLICY",
+      title: "15. CHANGES TO THIS PRIVACY POLICY",
       content: [
         "We may update this Privacy Policy periodically. Changes will be posted on this page with an updated 'Last Updated' date. Continued use of our app or website indicates acceptance.",
       ],
     },
     {
-      title: "14. CONTACT US",
+      title: "16. GOVERNING LAW",
+      content: [
+        "This Privacy Policy shall be governed by and construed in accordance with the laws of the United States. For users located in the European Economic Area (EEA), the General Data Protection Regulation (GDPR) shall apply with respect to the processing of your personal data. By using our Services, you acknowledge and agree that your personal information may be subject to such applicable laws.",
+      ],
+    },
+    {
+      title: "17. CONTACT US",
       content: [
         "For questions or concerns about this Privacy Policy, contact us at:",
         "",
@@ -200,13 +233,13 @@ export const privacyPolicyData: LegalPageData = {
 
 export const termsData: LegalPageData = {
   title: "TERMS AND CONDITIONS",
-  effectiveDate: "August 10, 2025",
-  lastUpdated: "August 10, 2025",
+  effectiveDate: "October 1, 2025",
+  lastUpdated: "October 1, 2025",
   sections: [
     {
-      title: "1. USER ELIGIBILITY",
+      title: "1. USER ELIGIBILITY AND AGE REQUIREMENT",
       content: [
-        "You must be at least 13 years old and have the legal capacity to enter into a binding agreement to use our Services. By using them, you represent and warrant that you meet these requirements.",
+        "You must be at least 13 years old to use our Services. By creating an account or using our Services, you represent and warrant that you are at least 13 years of age and have the legal capacity to enter into a binding agreement. Accounts for users under the age of 13 are prohibited and will be terminated upon discovery.",
       ],
     },
     {
@@ -222,7 +255,28 @@ export const termsData: LegalPageData = {
       ],
     },
     {
-      title: "4. USER SUBMISSIONS VIA WEBSITE",
+      title: "4. CONTENT MODERATION AND REPORTING",
+      content: [
+        "A. Moderation Policy: We are committed to maintaining a safe and respectful environment. We reserve the right, but not the obligation, to monitor, screen, and remove any User Content at any time and for any reason, including content that we believe violates these Terms.",
+        "",
+        "B. Reporting Abuse: Users can report posts or other content that they believe violate these Terms. We provide an in-app reporting feature for this purpose.",
+        "",
+        "C. Action on Reports: We are committed to reviewing and taking appropriate action on all reported content within 24 hours of the report being submitted. Actions may include, but are not limited to, removing the content, issuing a warning to the user, temporarily suspending the user's account, or permanently terminating the account.",
+      ],
+    },
+    {
+      title: "5. SUSPENSION AND TERMINATION POLICY",
+      content: [
+        "We reserve the right to suspend or terminate your access to the Services at any time, with or without notice, for conduct that we believe:",
+        "• Violates these Terms, our Community Guidelines, or applicable laws",
+        "• Is fraudulent, harmful, or offensive",
+        "• Poses a risk to the security or enjoyment of the Services by other users",
+        "",
+        "Upon termination, your right to use the Services will cease immediately. You must uninstall the App and cease all use of our Services.",
+      ],
+    },
+    {
+      title: "6. USER SUBMISSIONS VIA WEBSITE",
       content: [
         "Any feedback or information submitted via our Website (e.g., through contact forms) may be used by us without compensation. You confirm you have the right to share this information.",
       ],
@@ -235,98 +289,125 @@ export const termsData: LegalPageData = {
         "• Harasses, abuses, or threatens others",
         "• Interferes with or disrupts our systems",
         "• Attempts unauthorized access to the Services",
+        "• Impersonates any person or entity",
+        "• Involves spam or unauthorized advertising",
       ],
     },
     {
-      title: "6. INTELLECTUAL PROPERTY",
+      title: "8. INTELLECTUAL PROPERTY",
       content: [
         "All content on the App and Website (logos, designs, software, text, graphics) is the exclusive property of Boraami. You may not reproduce or distribute content without our written permission.",
-        "You retain ownership of your User Content. However, you grant us a worldwide, non-exclusive, royalty-free license to use and display it for the purpose of operating and improving our Services.",
+        "",
+        "You retain ownership of your User Content. However, you grant us a worldwide, non-exclusive, royalty-free license to use, display, and distribute it for the purpose of operating and improving our Services.",
       ],
     },
     {
-      title: "7. THIRD-PARTY SERVICES AND LINKS",
+      title: "9. GOVERNING LAW AND INTERNATIONAL USERS",
       content: [
-        "Our Services may include third-party tools (e.g., Google Analytics, Meta Pixel, Firebase) and links to external websites. We are not responsible for their content or privacy practices. Use them at your own risk.",
+        "These Terms and your use of the Services are governed by the laws of the United States, without regard to its conflict of law principles. If you are accessing the Services from outside the United States, you are responsible for compliance with all local laws. We make no representation that the Services are appropriate or available for use in other locations.",
       ],
     },
     {
-      title: "8. TERMINATION",
+      title: "10. THIRD-PARTY SERVICES AND LINKS",
       content: [
-        "We reserve the right to suspend or terminate your access to the Services at any time for violation of these Terms. Upon termination, you must uninstall the App and cease all use of our Services.",
+        "Our Services may include third-party tools (e.g., Amplitude Analytics, Sentry etc) and links to external websites. We are not responsible for their content, privacy practices, or terms of use. Use them at your own risk.",
       ],
     },
     {
-      title: "9. DISCLAIMERS",
+      title: "11. DATA & PRIVACY",
+      content: "",
+      subsections: [
+        {
+          title: "1. Privacy Policy Reference:",
+          content: [
+            "Your use of the Services is also governed by our Privacy Policy, which explains how we collect, use, store, and protect your information. By agreeing to these Terms, you also agree to the terms of our Privacy Policy.",
+          ],
+        },
+        {
+          title: "2. Data Retention:",
+          content: [
+            "We retain your personal data in accordance with our Privacy Policy. Upon account deletion, we initiate deletion of active records within 30 days, subject to residual backup systems.",
+          ],
+        },
+        {
+          title: "3. User Data Rights:",
+          content: [
+            "Depending on your jurisdiction, you may have legal rights over your data (such as access, deletion, correction, or portability). These rights may be exercised by contacting us at contact@boraami.app. We will respond to all legitimate requests within 30 days, subject to identity verification.",
+          ],
+        },
+        {
+          title: "4. International Data Transfers:",
+          content: [
+            "If you access the Services from outside the United States, you acknowledge and consent to your data being transferred to and processed in the United States and other jurisdictions where our service providers are located.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "12. DISCLAIMERS",
       content: [
-        "The Services are provided 'as is' and 'as available.' We do not guarantee continuous, error-free, or secure access. To the extent permitted by law, we disclaim all warranties and liability related to your use of the Services.",
+        "The Services are provided 'as is' and 'as available.' We do not guarantee continuous, error-free, or secure access. To the extent permitted by law, we disclaim all warranties, express or implied, including implied warranties of merchantability and fitness for a particular purpose.",
       ],
     },
     {
-      title: "10. LIMITATION OF LIABILITY",
+      title: "13. LIMITATION OF LIABILITY",
       content: [
-        "To the maximum extent allowed by law, Boraami is not liable for any direct, indirect, or consequential damages resulting from your use of the Services.",
+        "To the maximum extent allowed by applicable law, Boraami and its affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from your use of the Services.",
       ],
     },
     {
-      title: "11. CHANGES TO TERMS",
+      title: "14. UPDATES TO TERMS",
       content: [
-        "We may update these Terms at any time. The updated Terms will be posted with a new 'Last Updated' date. Continued use of the Services constitutes acceptance of the new Terms.",
+        "We may update these Terms at any time. The updated Terms will be posted with a new 'Last Updated' date. We will notify you of material changes via the App or by email. Your continued use of the Services after such changes constitutes your acceptance of the new Terms.",
       ],
     },
     {
-      title: "12. GOVERNING LAW",
-      content: [
-        "These Terms are governed by the laws of the jurisdiction in which Boraami is registered, without regard to conflict of law principles.",
-      ],
-    },
-    {
-      title: "13. COMMUNITY GUIDELINES & CODE OF CONDUCT",
+      title: "15. COMMUNITY GUIDELINES & CODE OF CONDUCT",
       content:
         "By using Boraami, you agree to maintain respectful behavior and follow these community guidelines:",
     },
     {
-      title: "13.1 Respect BTS and Each Other",
+      title: "15.1 Respect BTS and Each Other",
       content:
         "Respect and support all 7 members equally, refraining from arguments that don't align with an OT7 mindset. Treat fellow ARMY members with kindness, fostering a positive atmosphere and avoiding negativity, even if you disagree with them.",
     },
     {
-      title: "13.2 Privacy Protection",
+      title: "15.2 Privacy Protection",
       content:
         "Protect BTS' and fellow ARMY's privacy, avoid sharing unauthorized content or supporting invasive behavior. Don't share personal information that could put you or others in danger (i.e. doxxing).",
     },
     {
-      title: "13.3 Appropriate Content",
+      title: "15.3 Appropriate Content",
       content:
         "Be mindful of others' feelings and avoid derogatory language or behavior. Avoid posting or sharing content that is sexually explicit, obscene, or otherwise inappropriate for the platform's intended audience.",
     },
     {
-      title: "13.4 Anti-Bullying Policy",
+      title: "15.4 Anti-Bullying Policy",
       content:
         "Refrain from cyberbullying or stalking BTS and others. Any form of harassment, intimidation, or threatening behavior will not be tolerated.",
     },
     {
-      title: "13.5 Legal and Ethical Standards",
+      title: "15.5 Legal and Ethical Standards",
       content:
         "Adhere to legal and ethical standards when engaging in fandom activities, and avoid behavior that could violate the law or ethical principles.",
     },
     {
-      title: "13.6 Platform Responsibility",
+      title: "15.6 Platform Responsibility",
       content:
         "Avoid spamming, phishing and impersonations. Use Boraami's features as intended and respect the platform's resources.",
     },
     {
-      title: "13.7 Accountability",
+      title: "15.7 Accountability",
       content:
         "Take responsibility for your words and actions; be willing to apologize for mistakes, and report inappropriate content. Help us maintain a safe and fun environment for all ARMY.",
     },
     {
-      title: "13.8 Enforcement",
+      title: "15.8 Enforcement",
       content:
         "Violation of these community guidelines may result in content removal, warnings, temporary suspension, or permanent account termination, depending on the severity and frequency of violations.",
     },
     {
-      title: "14. CONTACT INFORMATION",
+      title: "16. CONTACT INFORMATION",
       content: [
         "For any questions or concerns regarding these Terms, please contact us at:",
         "Email: contact@boraami.app",
@@ -372,6 +453,9 @@ export const childSafetyPolicyData: LegalPageData = {
         "• Community-driven reporting system with multiple reporting channels",
         "• Proactive scanning for suspicious patterns and behaviors",
         "• Collaboration with law enforcement and child safety organizations when required",
+        "• We review reported content within 24 hours",
+        "• In-app reporting available for all content",
+        "• Users can block other users and report violations",
       ],
     },
     {
@@ -430,6 +514,10 @@ export const childSafetyPolicyData: LegalPageData = {
             "• Permanent account termination for confirmed violations",
             "• Device and IP blocking to prevent account recreation",
             "• Reporting to National Center for Missing & Exploited Children (NCMEC) and relevant authorities",
+            "• Warning for first violation",
+            "• Temporary suspension (7-30 days) for repeat violations",
+            "• Permanent termination for severe violations",
+            "• Manual admin suspension available for immediate threats",
           ],
         },
         {
