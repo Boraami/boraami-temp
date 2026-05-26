@@ -14,7 +14,7 @@ export interface LegalPageData {
 export const privacyPolicyData: LegalPageData = {
   title: "PRIVACY POLICY",
   effectiveDate: "October 1, 2025",
-  lastUpdated: "October 1, 2025",
+  lastUpdated: "May 26, 2026",
   sections: [
     {
       title: "1. WHO WE ARE",
@@ -33,6 +33,7 @@ export const privacyPolicyData: LegalPageData = {
           content: [
             "• Name and email address (via forms, signups, or contact tools)",
             "• User-generated content (posts, replies, likes)",
+            "• Images you choose to attach to posts or set as your profile picture (optional — text-only posts are fully supported)",
           ],
         },
         {
@@ -52,7 +53,6 @@ export const privacyPolicyData: LegalPageData = {
           title: "C. Information We Do NOT Collect:",
           content: [
             "• Payment data",
-            "• Media uploads",
             "• Precise geolocation",
             "• Date of birth (unless required for legal compliance)",
           ],
@@ -189,6 +189,7 @@ export const privacyPolicyData: LegalPageData = {
             "--------|--------",
             "[Amplitude Analytics](https://amplitude.com/privacy) | In-app usage tracking",
             "[Sentry](https://sentry.io/privacy/) | Error/crash reporting",
+            "[Firebase Cloud Messaging](https://firebase.google.com/support/privacy) | Push notification delivery (Android)",
             "[Expo Secure Store](https://docs.expo.dev/versions/latest/sdk/securestore/) | Secure token storage (App)",
           ],
         },
