@@ -13,15 +13,17 @@ export interface LegalPageData {
 
 export const privacyPolicyData: LegalPageData = {
   title: "PRIVACY POLICY",
-  effectiveDate: "October 1, 2025",
-  lastUpdated: "May 26, 2026",
+  effectiveDate: "August 10, 2025",
+  lastUpdated: "May 28, 2026",
   sections: [
     {
       title: "1. WHO WE ARE",
       content: [
         "This Privacy Policy applies to all Boraami digital platforms including the Boraami App and website.",
+        "Developer: Boraami LLC",
         "Website: https://boraami.app",
         "Contact: contact@boraami.app",
+        "Address: 30 N Gould St Ste N, Sheridan, WY 82801",
       ],
     },
     {
@@ -33,7 +35,6 @@ export const privacyPolicyData: LegalPageData = {
           content: [
             "• Name and email address (via forms, signups, or contact tools)",
             "• User-generated content (posts, replies, likes)",
-            "• Images you choose to attach to posts or set as your profile picture (optional — text-only posts are fully supported)",
           ],
         },
         {
@@ -50,11 +51,11 @@ export const privacyPolicyData: LegalPageData = {
           ],
         },
         {
-          title: "C. Information We Do NOT Collect:",
+          title: "We do NOT collect:",
           content: [
             "• Payment data",
+            "• Media uploads",
             "• Precise geolocation",
-            "• Date of birth (unless required for legal compliance)",
           ],
         },
       ],
@@ -129,8 +130,6 @@ export const privacyPolicyData: LegalPageData = {
       content: [
         "Your personal information may be processed and stored on servers located outside of the country in which you reside, including in the United States. These countries may have data protection laws that are different from the laws of your country.",
         "",
-        "However, we take appropriate safeguards to ensure that your data receives an adequate level of protection. We rely on recognized legal mechanisms for these transfers, such as the European Commission's Standard Contractual Clauses, to ensure your rights and protections travel with your data.",
-        "",
         "By accessing or using our Services, you acknowledge and agree that your personal information may be transferred to, processed, and stored in the United States and other jurisdictions where data protection laws may differ from those in your country of residence. Where required, we rely on lawful transfer mechanisms such as the European Commission's Standard Contractual Clauses. By continuing to use the Services, you expressly consent to such transfers.",
       ],
     },
@@ -151,7 +150,7 @@ export const privacyPolicyData: LegalPageData = {
     {
       title: "10. CHILDREN'S PRIVACY",
       content: [
-        "Our app and website are not intended for children under 13. We do not knowingly collect personal data from anyone under this age. If we become aware of such data, we will delete it immediately.",
+        "Our app and website are not intended for children under 13. We do not knowingly collect personal data from anyone under this age. If we become aware that we have collected personal information from a child under 13, we will delete it immediately. Users are required to confirm they are at least 13 years old during the sign-up process.",
       ],
     },
     {
@@ -162,7 +161,7 @@ export const privacyPolicyData: LegalPageData = {
         "• Secure servers and API communications",
         "• Access controls and logging",
         "",
-        "While we strive to use commercially acceptable means, no method is 100% secure.",
+        "While we strive to use commercially acceptable means, no method of transmission over the Internet or electronic storage is 100% secure.",
       ],
     },
     {
@@ -210,7 +209,7 @@ export const privacyPolicyData: LegalPageData = {
     {
       title: "15. CHANGES TO THIS PRIVACY POLICY",
       content: [
-        "We may update this Privacy Policy periodically. Changes will be posted on this page with an updated 'Last Updated' date. Continued use of our app or website indicates acceptance.",
+        "We may update this Privacy Policy periodically to reflect changes in our practices or the law. Changes will be posted on this page with an updated \"Last Updated\" date. We will notify you of any material changes via the App or by email. Continued use of our app or website after such changes constitutes your acceptance of the new Privacy Policy.",
       ],
     },
     {
