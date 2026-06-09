@@ -35,6 +35,7 @@ export const privacyPolicyData: LegalPageData = {
           content: [
             "• Name and email address (via forms, signups, or contact tools)",
             "• User-generated content (posts, replies, likes)",
+            "• Images attached to posts or set as your profile picture",
           ],
         },
         {
@@ -54,7 +55,6 @@ export const privacyPolicyData: LegalPageData = {
           title: "We do NOT collect:",
           content: [
             "• Payment data",
-            "• Media uploads",
             "• Precise geolocation",
           ],
         },
