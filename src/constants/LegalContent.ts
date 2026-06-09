@@ -233,8 +233,8 @@ export const privacyPolicyData: LegalPageData = {
 
 export const termsData: LegalPageData = {
   title: "TERMS AND CONDITIONS",
-  effectiveDate: "October 1, 2025",
-  lastUpdated: "October 1, 2025",
+  effectiveDate: "August 10, 2025",
+  lastUpdated: "May 28, 2026",
   sections: [
     {
       title: "1. USER ELIGIBILITY AND AGE REQUIREMENT",
@@ -245,13 +245,13 @@ export const termsData: LegalPageData = {
     {
       title: "2. USER ACCOUNTS",
       content: [
-        "Users may create accounts for the App. You are responsible for maintaining the confidentiality of your account information and for all activity under your account.",
+        "Users may create accounts for the App. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.",
       ],
     },
     {
       title: "3. USER CONTENT",
       content: [
-        "You may post content (posts, replies, comments) through the App. By doing so, you agree not to submit content that is illegal, explicit, harassing, or violates these Terms. We may remove any User Content at our discretion.",
+        "You may post content (posts, replies, comments) through the App. By doing so, you agree not to submit content that is illegal, explicit, harassing, infringing on intellectual property rights, or otherwise violates these Terms.",
       ],
     },
     {
@@ -282,7 +282,7 @@ export const termsData: LegalPageData = {
       ],
     },
     {
-      title: "5. PROHIBITED CONDUCT",
+      title: "7. PROHIBITED CONDUCT",
       content: [
         "You agree not to engage in any activity that:",
         "• Violates applicable laws",
@@ -310,7 +310,7 @@ export const termsData: LegalPageData = {
     {
       title: "10. THIRD-PARTY SERVICES AND LINKS",
       content: [
-        "Our Services may include third-party tools (e.g., Amplitude Analytics, Sentry etc) and links to external websites. We are not responsible for their content, privacy practices, or terms of use. Use them at your own risk.",
+        "Our Services may include third-party tools (e.g., Amplitude Analytics, Sentry, Firebase) and links to external websites. We are not responsible for their content, privacy practices, or terms of use. Use them at your own risk.",
       ],
     },
     {
@@ -346,7 +346,7 @@ export const termsData: LegalPageData = {
     {
       title: "12. DISCLAIMERS",
       content: [
-        "The Services are provided 'as is' and 'as available.' We do not guarantee continuous, error-free, or secure access. To the extent permitted by law, we disclaim all warranties, express or implied, including implied warranties of merchantability and fitness for a particular purpose.",
+        "The Services are provided \"as is\" and \"as available.\" We do not guarantee continuous, error-free, or secure access. To the extent permitted by law, we disclaim all warranties, express or implied, including implied warranties of merchantability and fitness for a particular purpose.",
       ],
     },
     {
@@ -362,55 +362,12 @@ export const termsData: LegalPageData = {
       ],
     },
     {
-      title: "15. COMMUNITY GUIDELINES & CODE OF CONDUCT",
-      content:
-        "By using Boraami, you agree to maintain respectful behavior and follow these community guidelines:",
-    },
-    {
-      title: "15.1 Respect BTS and Each Other",
-      content:
-        "Respect and support all 7 members equally, refraining from arguments that don't align with an OT7 mindset. Treat fellow ARMY members with kindness, fostering a positive atmosphere and avoiding negativity, even if you disagree with them.",
-    },
-    {
-      title: "15.2 Privacy Protection",
-      content:
-        "Protect BTS' and fellow ARMY's privacy, avoid sharing unauthorized content or supporting invasive behavior. Don't share personal information that could put you or others in danger (i.e. doxxing).",
-    },
-    {
-      title: "15.3 Appropriate Content",
-      content:
-        "Be mindful of others' feelings and avoid derogatory language or behavior. Avoid posting or sharing content that is sexually explicit, obscene, or otherwise inappropriate for the platform's intended audience.",
-    },
-    {
-      title: "15.4 Anti-Bullying Policy",
-      content:
-        "Refrain from cyberbullying or stalking BTS and others. Any form of harassment, intimidation, or threatening behavior will not be tolerated.",
-    },
-    {
-      title: "15.5 Legal and Ethical Standards",
-      content:
-        "Adhere to legal and ethical standards when engaging in fandom activities, and avoid behavior that could violate the law or ethical principles.",
-    },
-    {
-      title: "15.6 Platform Responsibility",
-      content:
-        "Avoid spamming, phishing and impersonations. Use Boraami's features as intended and respect the platform's resources.",
-    },
-    {
-      title: "15.7 Accountability",
-      content:
-        "Take responsibility for your words and actions; be willing to apologize for mistakes, and report inappropriate content. Help us maintain a safe and fun environment for all ARMY.",
-    },
-    {
-      title: "15.8 Enforcement",
-      content:
-        "Violation of these community guidelines may result in content removal, warnings, temporary suspension, or permanent account termination, depending on the severity and frequency of violations.",
-    },
-    {
-      title: "16. CONTACT INFORMATION",
+      title: "15. CONTACT INFORMATION",
       content: [
-        "For any questions or concerns regarding these Terms, please contact us at:",
+        "For any questions, to report content, or for concerns regarding these Terms, please contact us at:",
         "Email: contact@boraami.app",
+        "Developer: Boraami LLC",
+        "Address: 30 N Gould St Ste N, Sheridan, WY 82801",
       ],
     },
   ],

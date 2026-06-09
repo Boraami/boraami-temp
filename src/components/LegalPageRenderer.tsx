@@ -202,7 +202,7 @@ const LegalPageRenderer: React.FC<LegalPageRendererProps> = ({ data, pageType })
               <p>
                 Welcome to Boraami! These Terms and Conditions ("Terms") apply to your use of both
                 our mobile application ("App") and our websites (https://boraami.app) (collectively,
-                the "Services"), operated by Boraami ("Company," "we," "us," or "our").
+                the "Services"), operated by Boraami LLC ("Company," "we," "us," or "our").
               </p>
 
               <p>
