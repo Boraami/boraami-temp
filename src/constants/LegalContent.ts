@@ -13,7 +13,7 @@ export interface LegalPageData {
 
 export const privacyPolicyData: LegalPageData = {
   title: "PRIVACY POLICY",
-  effectiveDate: "August 10, 2025",
+  effectiveDate: "May 28, 2026",
   lastUpdated: "May 28, 2026",
   sections: [
     {
@@ -53,10 +53,7 @@ export const privacyPolicyData: LegalPageData = {
         },
         {
           title: "We do NOT collect:",
-          content: [
-            "• Payment data",
-            "• Precise geolocation",
-          ],
+          content: ["• Payment data", "• Precise geolocation"],
         },
       ],
     },
@@ -209,7 +206,7 @@ export const privacyPolicyData: LegalPageData = {
     {
       title: "15. CHANGES TO THIS PRIVACY POLICY",
       content: [
-        "We may update this Privacy Policy periodically to reflect changes in our practices or the law. Changes will be posted on this page with an updated \"Last Updated\" date. We will notify you of any material changes via the App or by email. Continued use of our app or website after such changes constitutes your acceptance of the new Privacy Policy.",
+        'We may update this Privacy Policy periodically to reflect changes in our practices or the law. Changes will be posted on this page with an updated "Last Updated" date. We will notify you of any material changes via the App or by email. Continued use of our app or website after such changes constitutes your acceptance of the new Privacy Policy.',
       ],
     },
     {
@@ -233,7 +230,7 @@ export const privacyPolicyData: LegalPageData = {
 
 export const termsData: LegalPageData = {
   title: "TERMS AND CONDITIONS",
-  effectiveDate: "August 10, 2025",
+  effectiveDate: "May 28, 2026",
   lastUpdated: "May 28, 2026",
   sections: [
     {
@@ -346,7 +343,7 @@ export const termsData: LegalPageData = {
     {
       title: "12. DISCLAIMERS",
       content: [
-        "The Services are provided \"as is\" and \"as available.\" We do not guarantee continuous, error-free, or secure access. To the extent permitted by law, we disclaim all warranties, express or implied, including implied warranties of merchantability and fitness for a particular purpose.",
+        'The Services are provided "as is" and "as available." We do not guarantee continuous, error-free, or secure access. To the extent permitted by law, we disclaim all warranties, express or implied, including implied warranties of merchantability and fitness for a particular purpose.',
       ],
     },
     {
