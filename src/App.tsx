@@ -1,30 +1,13 @@
 import { Routes, Route, Link } from "react-router-dom";
 import boraamiLogo from "./assets/boraami-primary-horizontal-logo.svg";
 import blueHeroImg from "./assets/blu-app.png";
-import TiktokIcon from "./assets/TiktokIcon";
-import XIcon from "./assets/XIcon";
-import BlueskyIcon from "./assets/BlueskyIcon";
-import InstagramIcon from "./assets/InstagramIcon";
-import SpotifyIcon from "./assets/SpotifyIcon";
+import googlePlayBadge from "./assets/google_store.png";
 import FAQList from "./components/FAQList";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Terms from "./components/Terms";
 import ScrollToTop from "./components/ScrollToTop";
 import SafetyPolicyPage from "./pages/SafetyPolicyPage";
 import "./App.css";
-
-interface LinkProps {
-  link: string;
-  icon: JSX.Element;
-}
-
-const SocialLink = ({ link, icon }: LinkProps) => {
-  return (
-    <a target="_blank" rel="noopener noreferrer" className="social-icon" href={link}>
-      {icon}
-    </a>
-  );
-};
 
 const HomePage = () => {
   return (
@@ -38,10 +21,7 @@ const HomePage = () => {
 
           <div className="content">
             <header>
-              <h1>
-                <img src={boraamiLogo} className="logo" alt="Boraami Logo" />
-              </h1>
-              <h2>Coming soon!</h2>
+              <h2>Boraami is Live!</h2>
             </header>
 
             <p>
@@ -49,21 +29,30 @@ const HomePage = () => {
               connected, and support all the <span className="bold">BTS</span> members
             </p>
 
-            <div className="socials">
-              <p>Let's stay in touch and follow us on:</p>
+            <div className="store-links">
+              <p>Now available on Android play store!</p>
+              <a
+                href="https://play.google.com/store/apps/details?id=app.boraami"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={googlePlayBadge} alt="Get it on Google Play" className="store-badge" />
+              </a>
+              <p className="store-coming-soon">(App store coming soon)</p>
+            </div>
 
-              <div className="social-media-icons">
-                <SocialLink link="https://twitter.com/boraami_app" icon={<XIcon />} />
-                <SocialLink
-                  link="https://www.instagram.com/boraami_app/"
-                  icon={<InstagramIcon />}
-                />
-                <SocialLink link="https://www.tiktok.com/@boraami_app" icon={<TiktokIcon />} />
-                <SocialLink link="https://bsky.app/profile/boraami.app" icon={<BlueskyIcon />} />
-                <SocialLink
-                  link="https://open.spotify.com/user/31tzruz5rzkaafyuyvnmzzyodvoe?si=04f4121edefb4f7c"
-                  icon={<SpotifyIcon />}
-                />
+            <div className="feedback">
+              <p>Experiencing a bug or have feedback?</p>
+              <div className="feedback-row">
+                <span>We want to hear from you!</span>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeMDb6CNh5bZ12vG-shlbWrDjA1kL0yX5HwJHESlU12UiLNuQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="feedback-button"
+                >
+                  Submit report or feedback
+                </a>
               </div>
             </div>
           </div>
@@ -91,7 +80,7 @@ const HomePage = () => {
         <div className="footer-content">
           <div className="footer-column">
             <img src={boraamiLogo} alt="Boraami Logo" className="footer-logo" />
-            <p>© 2025 Boraami. All rights reserved.</p>
+            <p>© 2026 Boraami. All rights reserved.</p>
           </div>
           <div className="footer-column">
             <Link to="/privacy-policy" className="footer-link">
