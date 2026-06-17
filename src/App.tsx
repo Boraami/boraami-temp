@@ -32,7 +32,7 @@ const HomePage = () => {
             <div className="store-links">
               <p>Now available on Android play store!</p>
               <a
-                href="https://play.google.com/store/apps/details?id=app.boraami"
+                href="https://play.google.com/store/apps/details?id=app.boraami.mobile"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -42,9 +42,9 @@ const HomePage = () => {
             </div>
 
             <div className="feedback">
-              <p>Experiencing a bug or have feedback?</p>
+              <p>Experiencing a bug or have feedback?</p><br/>
               <div className="feedback-row">
-                <span>We want to hear from you!</span>
+                <p>We want to hear from you!</p>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeMDb6CNh5bZ12vG-shlbWrDjA1kL0yX5HwJHESlU12UiLNuQ/viewform"
                   target="_blank"
