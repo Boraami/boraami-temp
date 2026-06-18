@@ -1,7 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import boraamiLogo from "./assets/boraami-primary-horizontal-logo.svg";
 import blueHeroImg from "./assets/blu-app.png";
-import googlePlayBadge from "./assets/google_store.png";
+import googlePlayBadge from "./assets/google_store.svg";
 import FAQList from "./components/FAQList";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Terms from "./components/Terms";
@@ -44,7 +44,6 @@ const HomePage = () => {
             <div className="feedback">
               <p>Experiencing a bug or have feedback?</p><br/>
               <div className="feedback-row">
-                <p>We want to hear from you!</p>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeMDb6CNh5bZ12vG-shlbWrDjA1kL0yX5HwJHESlU12UiLNuQ/viewform"
                   target="_blank"

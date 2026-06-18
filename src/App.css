@@ -56,12 +56,16 @@ h3 {
   align-items: center;
   gap: 12px;
   margin: 24px 0;
+  max-width: 27.5rem;
 }
 
 .feedback {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: center;
+  text-align: center;
+  width: 90%;
 }
 
 .feedback-row {
@@ -106,6 +110,7 @@ main {
   flex-direction: column;
   max-width: 500px;
   padding-top: 10rem;
+
 }
 
 .screenshot {
@@ -600,7 +605,7 @@ h1 .logo {
     align-items: center;
     text-align: center;
   }
-  
+
   .content {
     width: 100%;
     max-width: 24rem;
@@ -608,9 +613,10 @@ h1 .logo {
     text-align: center;
     align-items: center;
   }
-  .content p {
+  .content > p {
     word-wrap: break-word;
     overflow-wrap: break-word;
+    max-width: 22rem;
   }
 
   .screenshot {
@@ -649,7 +655,7 @@ h1 .logo {
 
 @media (max-width: 640px) {
   .app {
-    background-position: -14rem -17rem;
+    background-position: center top;
   }
 
   main {
