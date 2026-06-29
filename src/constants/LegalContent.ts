@@ -23,7 +23,7 @@ export const privacyPolicyData: LegalPageData = {
         "Developer: Boraami LLC",
         "Website: https://boraami.app",
         "Contact: contact@boraami.app",
-        "Address: 30 N Gould St Ste N, Sheridan, WY 82801",
+        "Address: 30 N Gould St Ste N, Sheridan, WY 82801, USA",
       ],
     },
     {
@@ -364,7 +364,7 @@ export const termsData: LegalPageData = {
         "For any questions, to report content, or for concerns regarding these Terms, please contact us at:",
         "Email: contact@boraami.app",
         "Developer: Boraami LLC",
-        "Address: 30 N Gould St Ste N, Sheridan, WY 82801",
+        "Address: 30 N Gould St Ste N, Sheridan, WY 82801, USA",
       ],
     },
   ],
