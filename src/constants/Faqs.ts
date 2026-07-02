@@ -61,7 +61,7 @@ export const FAQs: FAQCategory[] = [
     faqs: [
       {
         question: `What should I include for my social media and streaming accounts?`,
-        answer: `Please provide your full profile URLs whenever possible (e.g. https://x.com/example) rather than just a handle or username. For streaming accounts, you may include profiles from services such as Spotify, YouTube Music, Apple Music, Last.fm, or other platforms you actively use. Providing complete profile links helps us review applications more accurately and efficiently.`,
+        answer: `Please provide your full profile URLs whenever possible (e.g. https://x.com/example) rather than just a handle or username. For streaming accounts, you may include profiles from services such as Spotify, YouTube Music, Apple Music, or other platforms you actively use. Providing complete profile links helps us review applications more accurately and efficiently.`,
       },
       {
         question: `What should I write for the streaming question?`,
